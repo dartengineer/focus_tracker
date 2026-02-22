@@ -8,7 +8,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "http://localhost:5173", // React dev server
+    origin: process.env.CLIENT_URL, // React dev server
     credentials: true,
   })
 );
